@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>PAVI - Dashboard</title>
+    <title>PAVI - Gestão</title>
     <!--
     
 
@@ -33,7 +33,7 @@
                     <nav class="navbar navbar-expand-xl navbar-light bg-light">
                         <a class="navbar-brand" href="#">
                             <i class="fas fa-3x fa-briefcase tm-site-icon"></i>
-                            <h1 class="tm-site-title mb-0">Dashboard</h1>
+                            <h1 class="tm-site-title mb-0">Gestão PAIV</h1>
                         </a>
                         <button class="navbar-toggler ml-auto mr-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                             aria-expanded="false" aria-label="Toggle navigation">
@@ -43,37 +43,37 @@
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav mx-auto">
                                 <li class="nav-item">
-                                    <a class="nav-link active" href="#">Dashboard
+                                    <a class="nav-link active" href="#">Gestão
                                         <span class="sr-only">(current)</span>
                                     </a>
                                 </li>
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
                                         aria-expanded="false">
-                                        Reports
+                                        Relatórios
                                     </a>
                                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <a class="dropdown-item" href="#">Daily Report</a>
-                                        <a class="dropdown-item" href="#">Weekly Report</a>
-                                        <a class="dropdown-item" href="#">Yearly Report</a>
+                                        <a class="dropdown-item" href="#">Relatório diários</a>
+                                        <a class="dropdown-item" href="#">Relatório mensal</a>
+                                        <a class="dropdown-item" href="#">Relatório anual</a>
                                     </div>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="products.html">Products</a>
+                                    <a class="nav-link" href="products.html">Funcionários</a>
                                 </li>
 
                                 <li class="nav-item">
-                                    <a class="nav-link" href="accounts.html">Accounts</a>
+                                    <a class="nav-link" href="accounts.html">Contas</a>
                                 </li>
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
                                         aria-expanded="false">
-                                        Settings
+                                        Configurações
                                     </a>
                                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <a class="dropdown-item" href="#">Profile</a>
-                                        <a class="dropdown-item" href="#">Billing</a>
-                                        <a class="dropdown-item" href="#">Customize</a>
+                                        <a class="dropdown-item" href="#">Perfil</a>
+                                        <a class="dropdown-item" href="#">Faturamento</a>
+                                        <a class="dropdown-item" href="#">Customizar</a>
                                     </div>
                                 </li>
                             </ul>
@@ -81,7 +81,7 @@
                                 <li class="nav-item">
                                     <a class="nav-link d-flex" href="login.html">
                                         <i class="far fa-user mr-2 tm-logout-icon"></i>
-                                        <span>Logout</span>
+                                        <span>Sair</span>
                                     </a>
                                 </li>
                             </ul>
@@ -99,7 +99,7 @@
                 </div>
                 <div class="tm-col tm-col-big">
                     <div class="bg-white tm-block h-100">
-                        <h2 class="tm-block-title">Performance</h2>
+                        <h2 class="tm-block-title">Desempenho</h2>
                         <canvas id="barChart"></canvas>
                     </div>
                 </div>
@@ -113,11 +113,11 @@
                     <div class="bg-white tm-block h-100">
                         <div class="row">
                             <div class="col-8">
-                                <h2 class="tm-block-title d-inline-block">Top Product List</h2>
+                                <h2 class="tm-block-title d-inline-block">Top funcionarios</h2>
 
                             </div>
                             <div class="col-4 text-right">
-                                <a href="products.html" class="tm-link-black">View All</a>
+                                <a href="products.html" class="tm-link-black">Ver tudo</a>
                             </div>
                         </div>
                         <ol class="tm-list-group tm-list-group-alternate-color tm-list-group-pad-big">
@@ -147,11 +147,11 @@
                 </div>
                 <div class="tm-col tm-col-big">
                     <div class="bg-white tm-block h-100">
-                        <h2 class="tm-block-title">Calendar</h2>
+                        <h2 class="tm-block-title">Calendário</h2>
                         <div id="calendar"></div>
                         <div class="row mt-4">
                             <div class="col-12 text-right">
-                                <a href="#" class="tm-link-black">View Schedules</a>
+                                <a href="#" class="tm-link-black">Ver horários</a>
                             </div>
                         </div>
 
@@ -159,9 +159,9 @@
                 </div>
                 <div class="tm-col tm-col-small">
                     <div class="bg-white tm-block h-100">
-                        <h2 class="tm-block-title">Upcoming Tasks</h2>
+                        <h2 class="tm-block-title">Próximas tarefas</h2>
                         <ol class="tm-list-group">
-                            <li class="tm-list-group-item">List of tasks</li>
+                            <li class="tm-list-group-item">Lista de tarefas</li>
                             <li class="tm-list-group-item">Lorem ipsum doloe</li>
                             <li class="tm-list-group-item">Read reports</li>
                             <li class="tm-list-group-item">Write email</li>
@@ -180,8 +180,7 @@
             <footer class="row tm-mt-small">
                 <div class="col-12 font-weight-light">
                     <p class="d-inline-block tm-bg-black text-white py-2 px-4">
-                        Copyright &copy; 2018 Admin Dashboard . Created by
-                        <a rel="nofollow" href="https://www.tooplate.com" class="text-white tm-footer-link">Tooplate</a>
+                        GestãoPAIV &copy; 2020
                     </p>
                 </div>
             </footer>
