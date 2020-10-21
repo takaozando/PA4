@@ -135,15 +135,19 @@ function drawPieChart() {
       data: {
         datasets: [
           {
-            data: [4600, 5400],
+            data: [4600, 5400, 2000, 6000, 200],
             backgroundColor: [
               window.chartColors.purple,
-              window.chartColors.green
+              window.chartColors.green,
+              window.chartColors.blue,
+              window.chartColors.red,
+              window.chartColors.yellow,
+              window.chartColors.orange
             ],
             label: "Storage"
           }
         ],
-        labels: ["Used: 4,600 GB", "Available: 5,400 GB"]
+        labels: ["Sorocaba","Votorantim","São Paulo"]
       },
       options: optionsPie
     };
@@ -196,35 +200,16 @@ function drawCalendar() {
       height: 400,
       events: [
         {
-          title: "Meeting",
-          start: "2018-09-1",
-          end: "2018-09-2"
+          title: "Início",
+          start: "0000-00-00"
         },
         {
-          title: "Marketing trip",
-          start: "2018-09-6",
-          end: "2018-09-8"
+          title: "Marcação 1",
+          start: "2020-10-01",
         },
         {
-          title: "Follow up",
-          start: "2018-10-12"
-        },
-        {
-          title: "Team",
-          start: "2018-10-17"
-        },
-        {
-          title: "Company Trip",
-          start: "2018-10-25",
-		  end: "2018-10-27"
-        },
-        {
-          title: "Review",
-          start: "2018-11-12"
-        },
-        {
-          title: "Plan",
-          start: "2018-11-18"
+          title: "Marcação 2",
+          start: "2020-10-31",
         }
       ],
       eventColor: "rgba(54, 162, 235, 0.4)"
