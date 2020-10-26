@@ -16,37 +16,33 @@ public class Funcionario implements Serializable{
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int codigo;
 
-    private String name;
-    private int age;
+    private String nome;
+    private int idade;//substituiçao de idade por nascimento e calcular idade
     private String posicao;
     private String escritorio;
     private String descricao;
-    private LocalDateTime expire_date; 
+    private LocalDateTime expire_date;//mudar tipo de data
+    private Double salario;
     
-    public Funcionario(String name, int age, String posicao, String escritorio, String descricao,
-            LocalDateTime expire_date) {
-        this.name = name;
-        this.age = age;
+    public Funcionario(String nome, int idade, String posicao, String escritorio, String descricao,
+            LocalDateTime expire_date, Double salario) {
+        this.nome = nome;
+        this.idade = idade;
         this.posicao = posicao;
         this.escritorio = escritorio;
         this.descricao = descricao;
         this.expire_date = expire_date;
+        this.salario = salario;
     }
     
     public Funcionario(){}
 
-    @Override
-    public String toString() {
-        return "Funcionario [age=" + age + ", codigo=" + codigo + ", descrição=" + descricao + ", escritorio="
-                + escritorio + ", expire_date=" + expire_date + ", name=" + name + ", posicao=" + posicao + "]";
+    public String getNome() {
+        return nome;
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
+    public void setNome(String nome) {
+        this.nome = nome;
     }
 
     public String getEscritorio() {
@@ -65,12 +61,12 @@ public class Funcionario implements Serializable{
         this.descricao = descricao;
     }
 
-    public int getAge() {
-        return age;
+    public int getIdade() {
+        return idade;
     }
 
-    public void setAge(int age) {
-        this.age = age;
+    public void setAge(int idade) {
+        this.idade = idade;
     }
 
     public LocalDateTime getExpire_date() {
@@ -97,6 +93,19 @@ public class Funcionario implements Serializable{
         this.codigo = codigo;
     }
 
+    public Double getSalario() {
+        return salario;
+    }
 
+    public void setSalario(Double salario) {
+        this.salario = salario;
+    }
+
+    @Override
+    public String toString() {
+        return "Funcionario [codigo=" + codigo + ", descricao=" + descricao + ", escritorio=" + escritorio
+                + ", expire_date=" + expire_date + ", idade=" + idade + ", nome=" + nome + ", posicao=" + posicao
+                + ", salario=" + salario + "]";
+    }
 
 }

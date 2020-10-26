@@ -47,8 +47,9 @@
                                         <span class="sr-only">(current)</span>
                                     </a>
                                 </li>
+
                                 <li class="nav-item">
-                                    <a class="nav-link" href="funcionarios.html">Funcionários</a>
+                                    <a class="nav-link" href="/main/funcionarios">Funcionários</a>
                                 </li>
 
                                 <li class="nav-item">
@@ -111,7 +112,7 @@
                         </div>
                         <table>
                             <tr th:each="funcionario: ${funcionarios}" class="tm-list-group tm-list-group-alternate-color tm-list-group-pad-big">
-                                <td th:text="${funcionario.name}"></td>
+                                <td th:text="${funcionario.nome}"></td>
                             </tr>
                         </table>
                         <!--

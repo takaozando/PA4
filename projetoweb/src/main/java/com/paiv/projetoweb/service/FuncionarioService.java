@@ -53,10 +53,10 @@ public class FuncionarioService {
         Funcionario alterar = getFuncionarioByCodigo(f.getCodigo());
         
         if(alterar != null){
-            alterar.setName(f.getName());
+            alterar.setNome(f.getNome());
             alterar.setEscritorio(f.getEscritorio());
             alterar.setDescricao(f.getDescricao());
-            alterar.setAge(f.getAge());
+            alterar.setAge(f.getIdade());
             alterar.setExpire_date(f.getExpire_date());
             alterar.setPosicao(f.getPosicao());
             return alterar;     
@@ -70,14 +70,11 @@ public class FuncionarioService {
     //TESTING
     public void insereListaFunc(){
         LocalDateTime time = LocalDateTime.now();
-        funcionarioRepository.save(new Funcionario("Joao",52,"CEO","Escritorio A","CEO da empresa",time));
-        funcionarioRepository.save(new Funcionario("Jonas",24,"Jardineiro","Escritorio A","Jardineiro mestre da empresa",time));
-        funcionarioRepository.save(new Funcionario("Moacir",19,"Programador","Escritorio E","Programador da empresa",time));
-        funcionarioRepository.save(new Funcionario("Gertrudes",73,"Guarda","Escritorio B","Guarda da empresa",time));
-        funcionarioRepository.save(new Funcionario("Marcelo",44,"Gestor","Escritorio C","Gestor da empresa",time));
-
-
-
+        funcionarioRepository.save(new Funcionario("Joao",52,"CEO","Escritorio A","CEO da empresa",time,1200.00));
+        funcionarioRepository.save(new Funcionario("Jonas",24,"Jardineiro","Escritorio A","Jardineiro mestre da empresa",time,500.00));
+        funcionarioRepository.save(new Funcionario("Moacir",19,"Programador","Escritorio E","Programador da empresa",time,200.00));
+        funcionarioRepository.save(new Funcionario("Gertrudes",73,"Guarda","Escritorio B","Guarda da empresa",time,900.00));
+        funcionarioRepository.save(new Funcionario("Marcelo",44,"Gestor","Escritorio C","Gestor da empresa",time,9.00));
     }
 
 
