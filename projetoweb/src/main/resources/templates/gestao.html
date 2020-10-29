@@ -40,9 +40,8 @@
                                         <span class="sr-only">(current)</span>
                                     </a>
                                 </li>
-
                                 <li class="nav-item">
-                                    <a class="nav-link" href="/main/funcionarios">Funcionários</a>
+                                    <a class="nav-link" href="funcionarios.html">Funcionários</a>
                                 </li>
 
                                 <li class="nav-item">
@@ -103,12 +102,6 @@
                                 <a href="funcionarios.html" class="tm-link-black">Ver tudo</a>
                             </div>
                         </div>
-                        <table>
-                            <tr th:each="funcionario: ${funcionarios}" class="tm-list-group tm-list-group-alternate-color tm-list-group-pad-big">
-                                <td th:text="${funcionario.nome}"></td>
-                            </tr>
-                        </table>
-                        <!--
                         <ol class="tm-list-group tm-list-group-alternate-color tm-list-group-pad-big">
                             <li class="tm-list-group-item">
                                 Tatiane Nair Débora Brito
@@ -120,7 +113,6 @@
                                 Edson Miguel Bernardo da Silva
                             </li>
                         </ol>
-                        -->
                     </div>
                 </div>
                 <div class="tm-col tm-col-big">
@@ -158,18 +150,18 @@
             </footer>
         </div>
     </div>
-    <script src="/js/jquery-3.3.1.min.js"></script>
+    <script src="../static/js/jquery-3.3.1.min.js"></script>
     <!-- https://jquery.com/download/ -->
-    <script src="/js/moment.min.js"></script>
+    <script src="../static/js/moment.min.js"></script>
     <!-- https://momentjs.com/ -->
-    <script src="/js/utils.js"></script>
-    <script src="/js/Chart.min.js"></script>
+    <script src="../static/js/utils.js"></script>
+    <script src="../static/js/Chart.min.js"></script>
     <!-- http://www.chartjs.org/docs/latest/ -->
-    <script src="/js/fullcalendar.min.js"></script>
+    <script src="../static/js/fullcalendar.min.js"></script>
     <!-- https://fullcalendar.io/ -->
-    <script src="/js/bootstrap.min.js"></script>
+    <script src="../static/js/bootstrap.min.js"></script>
     <!-- https://getbootstrap.com/ -->
-    <script src="/js/tooplate-scripts.js"></script>
+    <script src="../static/js/tooplate-scripts.js"></script>
     <script>
         let ctxLine,
             ctxBar,
