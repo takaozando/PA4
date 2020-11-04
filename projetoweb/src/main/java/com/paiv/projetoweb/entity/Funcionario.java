@@ -23,9 +23,10 @@ public class Funcionario implements Serializable{
     private String descricao;
     private LocalDateTime expire_date;//mudar tipo de data
     private Double salario;
+    private String status;
     
     public Funcionario(String nome, int idade, String posicao, String escritorio, String descricao,
-            LocalDateTime expire_date, Double salario) {
+            LocalDateTime expire_date, Double salario, String status) {
         this.nome = nome;
         this.idade = idade;
         this.posicao = posicao;
@@ -33,6 +34,10 @@ public class Funcionario implements Serializable{
         this.descricao = descricao;
         this.expire_date = expire_date;
         this.salario = salario;
+        if (status==null)
+            this.status="Funcionario regular";
+        else
+            this.status=status;
     }
     
     public Funcionario(){}
@@ -101,11 +106,19 @@ public class Funcionario implements Serializable{
         this.salario = salario;
     }
 
+    public String getStatus() {
+        return status;
+    }
+
+    public void setstatus(String status) {
+        this.status = status;
+    }
+
     @Override
     public String toString() {
         return "Funcionario [codigo=" + codigo + ", descricao=" + descricao + ", escritorio=" + escritorio
                 + ", expire_date=" + expire_date + ", idade=" + idade + ", nome=" + nome + ", posicao=" + posicao
-                + ", salario=" + salario + "]";
+                + ", salario=" + salario + ", status="+ status +"]";
     }
 
 }

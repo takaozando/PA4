@@ -46,6 +46,10 @@ public class FuncionarioService {
         if(getFuncionarioByCodigo(f.getCodigo()) != null){
             funcionarioRepository.deleteById(f.getCodigo());
         }
+    }
+
+    public void removeFuncionarioByCodigo(Integer codigo) {
+            funcionarioRepository.deleteById(codigo);
 	}
 
 	public Funcionario updateFuncionario(Funcionario f) {
@@ -70,11 +74,11 @@ public class FuncionarioService {
     //TESTING
     public void insereListaFunc(){
         LocalDateTime time = LocalDateTime.now();
-        funcionarioRepository.save(new Funcionario("Joao",52,"CEO","Escritorio A","CEO da empresa",time,1200.00));
-        funcionarioRepository.save(new Funcionario("Jonas",24,"Jardineiro","Escritorio A","Jardineiro mestre da empresa",time,500.00));
-        funcionarioRepository.save(new Funcionario("Moacir",19,"Programador","Escritorio E","Programador da empresa",time,200.00));
-        funcionarioRepository.save(new Funcionario("Gertrudes",73,"Guarda","Escritorio B","Guarda da empresa",time,900.00));
-        funcionarioRepository.save(new Funcionario("Marcelo",44,"Gestor","Escritorio C","Gestor da empresa",time,9.00));
+        funcionarioRepository.save(new Funcionario("Joao",52,"CEO","Escritorio A","CEO da empresa",time,1200.00,null));
+        funcionarioRepository.save(new Funcionario("Jonas",24,"Jardineiro","Escritorio A","Jardineiro mestre da empresa",time,500.00,null));
+        funcionarioRepository.save(new Funcionario("Moacir",19,"Programador","Escritorio E","Programador da empresa",time,200.00,"falecido"));
+        funcionarioRepository.save(new Funcionario("Gertrudes",73,"Guarda","Escritorio B","Guarda da empresa",time,900.00,"Em ferias"));
+        funcionarioRepository.save(new Funcionario("Marcelo",44,"Gestor","Escritorio C","Gestor da empresa",time,9.00,"Em licensa"));
     }
 
 

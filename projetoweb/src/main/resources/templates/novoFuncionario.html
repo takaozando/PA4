@@ -41,7 +41,7 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav mx-auto">
                             <li class="nav-item">
-                                <a class="nav-link" href="gestao.html">Gestão
+                                <a class="nav-link" href="/main/gestao">Gestão
                                     <span class="sr-only">(current)</span>
                                 </a>
                             </li>
@@ -57,7 +57,7 @@
                                 </div>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" href="funcionarios.html">Funcionários</a>
+                                <a class="nav-link active" href="/main/funcionarios">Funcionários</a>
                             </li>
 
                             <li class="nav-item">
@@ -124,6 +124,7 @@
                                         <option value="4">Gerente ou chefe</option>
                                         <option value="5">Supervisor</option>
                                         <option value="6">Operador</option>
+                                        <option value="7">Estagiário</option>
                                     </select>
                                 </div>
                                 <!--
@@ -139,7 +140,13 @@
                                     <label for="idade" class="col-xl-4 col-lg-4 col-md-4 col-sm-5 col-form-label">
                                         Idade
                                     </label>
-                                    <input id="idade" name="idade" type="number" min="16" class="form-control validate col-xl-9 col-lg-8 col-md-7 col-sm-7" required>
+                                    <input id="idade" name="idade" type="number" min="16" max="100" class="form-control validate col-xl-9 col-lg-8 col-md-7 col-sm-7" required>
+                                </div>
+                                <div class="input-group mb-3">
+                                    <label for="salario" class="col-xl-4 col-lg-4 col-md-4 col-sm-5 col-form-label">
+                                        Ssalario(R$)
+                                    </label>
+                                    <input id="salario" name="salario" type="number" min="0" class="form-control validate col-xl-9 col-lg-8 col-md-7 col-sm-7" required>
                                 </div>
                                 <div class="input-group mb-3">
                                     <div class="ml-auto col-xl-8 col-lg-8 col-md-8 col-sm-7 pl-0">

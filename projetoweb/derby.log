@@ -1,11 +1,11 @@
 ----------------------------------------------------------------
-Thu Oct 29 17:52:00 BRT 2020:
-Booting Derby version The Apache Software Foundation - Apache Derby - 10.14.2.0 - (1828579): instance a816c00e-0175-7621-ad7f-000000fb1ec0 
-on database directory C:\Users\AntonioCanno\Desktop\PA4\projetoweb\dbapp with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@2626b418 
-Loaded from file:/C:/Users/AntonioCanno/.m2/repository/org/apache/derby/derby/10.14.2.0/derby-10.14.2.0.jar
+Wed Nov 04 11:59:46 BRT 2020:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.14.2.0 - (1828579): instance a816c00e-0175-93c5-5ad7-0000011ded38 
+on database directory C:\Users\assus\Documents\GitHub\PA4\projetoweb\dbapp with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@3764951d 
+Loaded from file:/C:/Users/assus/.m2/repository/org/apache/derby/derby/10.14.2.0/derby-10.14.2.0.jar
 java.vendor=Oracle Corporation
-java.runtime.version=14.0.1+7
-user.dir=c:\Users\AntonioCanno\Desktop\PA4\projetoweb
+java.runtime.version=15.0.1+9-18
+user.dir=c:\Users\assus\Documents\GitHub\PA4\projetoweb
 os.name=Windows 10
 os.arch=amd64
 os.version=10.0

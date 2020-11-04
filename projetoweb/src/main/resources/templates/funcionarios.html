@@ -9,13 +9,13 @@
     
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600">
     <!-- https://fonts.google.com/specimen/Open+Sans -->
-    <link rel="stylesheet" href="../static/css/fontawesome.min.css">
+    <link rel="stylesheet" href="/css/fontawesome.min.css">
     <!-- https://fontawesome.com/ -->
-    <link rel="stylesheet" href="../static/css/fullcalendar.min.css">
+    <link rel="stylesheet" href="/css/fullcalendar.min.css">
     <!-- https://fullcalendar.io/ -->
-    <link rel="stylesheet" href="../static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
     <!-- https://getbootstrap.com/ -->
-    <link rel="stylesheet" href="../static/css/tooplate.css">
+    <link rel="stylesheet" href="/css/tooplate.css">
 </head>
 
 <body id="reportsPage" class="">
@@ -36,7 +36,7 @@
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav mx-auto">
                                 <li class="nav-item">
-                                    <a class="nav-link" href="gestao.html">Gestão
+                                    <a class="nav-link" href="main/gestao">Gestão
                                         <span class="sr-only">(current)</span>
                                     </a>
                                 </li>
@@ -52,7 +52,7 @@
                                     </div>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link active" href="funcionarios.html">Funcionários</a>
+                                    <a class="nav-link active" href="/main/funcionarios">Funcionários</a>
                                 </li>
 
                                 <li class="nav-item">
@@ -122,6 +122,17 @@
                                         <td th:text="${funcionario.posicao}"></td>
                                         <td th:text="${funcionario.escritorio}"></td>
                                         <td th:text="${funcionario.salario}"></td>
+                                        <td>
+                                            <button type="button" class="btn btn-outline-info">
+                                                <a th:href="@{'/main/editarfuncionario?codigo=' + ${funcionario.codigo}}">Editar</a>
+                                            </button>
+                                        </td>
+                                        <td>
+                                            <button type="button" class="btn btn-outline-danger" >
+                                                <a  th:href="@{'/main/removerfuncionario?codigo=' + ${funcionario.codigo}}"
+                                                    onclick="return confirm('Remover?, esta ação é irreversível.')">Remover</a>
+                                            </button>
+                                        </td>
                                     </tr>
                                     <!--         
                                     <tr>
