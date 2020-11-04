@@ -23,7 +23,7 @@
         <div class="row">
             <div class="col-12">
                 <nav class="navbar navbar-expand-xl navbar-light bg-light">
-                    <a class="navbar-brand" href="/main/gestao">
+                    <a class="navbar-brand" href="/gestao">
                         <i class="fas fa-3x fa-briefcase tm-site-icon"></i>
                         <h1 class="tm-site-title mb-0">Gestão PAIV</h1>
                     </a>
@@ -35,7 +35,7 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav mx-auto">
                             <li class="nav-item">
-                                <a class="nav-link" href="/main/gestao">Gestão
+                                <a class="nav-link" href="/gestao">Gestão
                                     <span class="sr-only">(current)</span>
                                 </a>
                             </li>
@@ -55,7 +55,7 @@
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link" href="contas.html">Contas</a>
+                                <a class="nav-link" href="/main/contas">Contas</a>
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
@@ -108,17 +108,18 @@
                                 </div>
                                 <div class="input-group mb-3">
                                     <label for="descricao" class="col-xl-4 col-lg-4 col-md-4 col-sm-5 mb-2">Descrição</label>
-                                    <textarea class="form-control validate col-xl-9 col-lg-8 col-md-8 col-sm-7" rows="3" th:value="${func.descricao}" name="descricao"  required></textarea>
+                                    <input class="form-control validate col-xl-9 col-lg-8 col-md-8 col-sm-7" rows="3" th:value="${func.descricao}" name="descricao" type="text" required></input>
                                 </div>
                                 <div class="input-group mb-3">
                                     <label for="posicao" class="col-xl-4 col-lg-4 col-md-4 col-sm-5 col-form-label">Posição</label>
                                     <select class="custom-select col-xl-9 col-lg-8 col-md-8 col-sm-7" id="posicao" name="posicao">
-                                        <option value="1">Diretor Executivo / Geral</option>
-                                        <option value="2">Presidente ou Vice-Presidente</option>
-                                        <option value="3">Diretor de Departamento</option>
-                                        <option value="4">Gerente ou chefe</option>
-                                        <option value="5">Supervisor</option>
-                                        <option value="6">Operador</option>
+                                        <option value="Diretor Executivo / Geral">Diretor Executivo / Geral</option>
+                                        <option value="Presidente ou Vice-Presidente">Presidente ou Vice-Presidente</option>
+                                        <option value="Diretor de Departamento">Diretor de Departamento</option>
+                                        <option value="Gerente ou chefe">Gerente ou chefe</option>
+                                        <option value="Supervisor">Supervisor</option>
+                                        <option value="Operador">Operador</option>
+                                        <option value="Estagiário">Estágiario</option>
                                     </select>
                                 </div>
                                 <!--
@@ -133,6 +134,11 @@
                                     <label for="idade" class="col-xl-4 col-lg-4 col-md-4 col-sm-5 col-form-label">Idade
                                     </label>
                                     <input placeholder="idade" th:value="${func.idade}" id="idade" name="idade" type="number" min="16" max="100" class="form-control validate col-xl-9 col-lg-8 col-md-7 col-sm-7">
+                                </div>
+                                <div class="input-group mb-3">
+                                    <label for="salario" class="col-xl-4 col-lg-4 col-md-4 col-sm-5 col-form-label">Salário
+                                    </label>
+                                    <input placeholder="salario" th:value="${func.salario}" id="salario" name="salario" type="number" min="0" class="form-control validate col-xl-9 col-lg-8 col-md-7 col-sm-7">
                                 </div>
                                 <div class="ml-auto col-xl-8 col-lg-8 col-md-8 col-sm-7 pl-0">
                                     <div class="row">

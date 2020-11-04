@@ -20,21 +20,12 @@ public class FuncionarioController {
     @Autowired
     FuncionarioService funcionarioService;
 
-    //Retorna View Principal
-    @GetMapping("/gestao")
-    public ModelAndView gestao(){
-        ModelAndView mv = new ModelAndView("gestao");//novo modelo e view com o nome da view
-        mv.addObject("funcionarios",funcionarioService.getAllFuncionarios());//add lista de objetos funcionario a view
-        return mv;
-    }
-
     //Retorna View com lista de funcionarios
     @GetMapping("/funcionarios")
     public ModelAndView listarFuncionarios(){
         ModelAndView mv = new ModelAndView("funcionarios");//novo modelo e view com o nome da view
         mv.addObject("funcionarios",funcionarioService.getAllFuncionarios());//add lista de objetos funcionario a view
         return mv;
-    
     }
 
     @GetMapping("/novofuncionario")
@@ -47,7 +38,7 @@ public class FuncionarioController {
     @PostMapping("/cadastrarfuncionario")
     public String cadastrarFuncionario(@ModelAttribute Funcionario funcionario){
         funcionarioService.saveFuncionario(funcionario);
-        return "redirect:/main/gestao";
+        return "redirect:/main/";
     }
 
     @GetMapping("/removerfuncionario")
@@ -64,13 +55,4 @@ public class FuncionarioController {
         mv.addObject("func", funcionarioService.getFuncionarioByCodigo(codigo));
         return mv;
     }
-
-
-    //TESTING
-    @GetMapping("/inserefuncs")
-    public String inserefuncs(){
-        funcionarioService.insereListaFunc();
-        return "redirect:/main/gestao";
-    }
-
 }

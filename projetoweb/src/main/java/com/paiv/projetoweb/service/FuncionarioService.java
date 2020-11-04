@@ -60,7 +60,7 @@ public class FuncionarioService {
             alterar.setNome(f.getNome());
             alterar.setEscritorio(f.getEscritorio());
             alterar.setDescricao(f.getDescricao());
-            alterar.setAge(f.getIdade());
+            alterar.setIdade(f.getIdade());
             alterar.setExpire_date(f.getExpire_date());
             alterar.setPosicao(f.getPosicao());
             return alterar;     

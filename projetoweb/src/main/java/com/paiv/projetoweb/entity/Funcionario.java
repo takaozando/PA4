@@ -70,7 +70,7 @@ public class Funcionario implements Serializable{
         return idade;
     }
 
-    public void setAge(int idade) {
+    public void setIdade(int idade) {
         this.idade = idade;
     }
 
