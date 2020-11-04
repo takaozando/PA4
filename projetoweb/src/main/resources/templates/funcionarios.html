@@ -123,14 +123,15 @@
                                         <td th:text="${funcionario.escritorio}"></td>
                                         <td th:text="${funcionario.salario}"></td>
                                         <td>
-                                            <button type="button" class="btn btn-outline-info">
-                                                <a th:href="@{'/main/editarfuncionario?codigo=' + ${funcionario.codigo}}">Editar</a>
-                                            </button>
+                                            <a th:href="@{'/main/editarfuncionario?codigo=' + ${funcionario.codigo}}">
+                                            <button type="button" class="btn btn-primary">Atualizar</button>
+                                            </a>
                                         </td>
                                         <td>
-                                            <button type="button" class="btn btn-outline-danger" >
-                                                <a  th:href="@{'/main/removerfuncionario?codigo=' + ${funcionario.codigo}}"
-                                                    onclick="return confirm('Remover?, esta ação é irreversível.')">Remover</a>
+                                            <a  th:href="@{'/main/removerfuncionario?codigo=' + ${funcionario.codigo}}"
+                                                onclick="return confirm('Remover?, esta ação é irreversível.')"></a>
+                                            <button type="button" class="btn btn-danger">
+                                                Remover
                                             </button>
                                         </td>
                                     </tr>

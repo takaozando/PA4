@@ -54,14 +54,14 @@ public class FuncionarioController {
     public String removerFuncionario(@RequestParam Integer codigo){
         Funcionario funcionario = funcionarioService.getFuncionarioByCodigo(codigo);
         funcionarioService.removeFuncionario(funcionario);
-        //implementar - verificar se existe func
+        //implementar - verificar se existe func - throw exception
         return "redirect:/main/funcionarios";
     }
 
     @GetMapping("/editarfuncionario")
     public ModelAndView editarFuncionario(@RequestParam Integer codigo){
         ModelAndView mv = new ModelAndView("editarFuncionario");
-        mv.addObject("funcionario", funcionarioService.getFuncionarioByCodigo(codigo));
+        mv.addObject("func", funcionarioService.getFuncionarioByCodigo(codigo));
         return mv;
     }
 
