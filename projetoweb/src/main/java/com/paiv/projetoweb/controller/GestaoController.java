@@ -10,12 +10,12 @@ import org.springframework.web.servlet.ModelAndView;
 //@RestController
 @Controller
 @RequestMapping("/")
-public class MainController {
+public class GestaoController {
     
     @Autowired
     FuncionarioService funcionarioService;
 
-    //Retorna View Principal
+    //Retorna View Principal de gestão
     @GetMapping("gestao")
     public ModelAndView gestao(){
         ModelAndView mv = new ModelAndView("gestao");//novo modelo e view com o nome da view
@@ -23,12 +23,13 @@ public class MainController {
         return mv;
     }
 
+    //?
     @GetMapping("contas")
     public String contas(){
         return "contas";
     }
 
-    //TESTING
+    //////////TESTING//////////
     @GetMapping("/inserefuncs")
     public String inserefuncs(){
         funcionarioService.insereListaFunc();

@@ -15,15 +15,8 @@ public class FuncionarioService {
     @Autowired
     FuncionarioRepository funcionarioRepository;
 
-    //private ArrayList<Funcionario> funcionarios = new ArrayList<Funcionario>();
-    //private static int nextCodigo = 1;
-
     public Funcionario saveFuncionario(Funcionario f){
-        //funcionario.setCodigo(nextCodigo++);
-        //funcionarios.add(funcionario);
-
         funcionarioRepository.save(f);
-        
         return f;
     }
 
@@ -32,13 +25,11 @@ public class FuncionarioService {
     }
 
     public Funcionario getFuncionarioByCodigo(int codigo){
-        
         for(Funcionario f: funcionarioRepository.findAll()){
             if(f.getCodigo() == codigo){
                 return f;
             }
         }
-
         return null;
     }
 
@@ -52,6 +43,7 @@ public class FuncionarioService {
             funcionarioRepository.deleteById(codigo);
 	}
 
+    //rever funçao update
 	public Funcionario updateFuncionario(Funcionario f) {
 
         Funcionario alterar = getFuncionarioByCodigo(f.getCodigo());
@@ -71,7 +63,7 @@ public class FuncionarioService {
        }
     }
     
-    //TESTING
+    ////////TESTING////////
     public void insereListaFunc(){
         LocalDateTime time = LocalDateTime.now();
         funcionarioRepository.save(new Funcionario("Joao",52,"CEO","Escritorio A","CEO da empresa",time,1200.00,null));

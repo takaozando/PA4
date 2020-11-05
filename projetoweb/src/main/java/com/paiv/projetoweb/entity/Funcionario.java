@@ -23,7 +23,7 @@ public class Funcionario implements Serializable{
     private String descricao;
     private LocalDateTime expire_date;//mudar tipo de data
     private Double salario;
-    private String status;
+    private String status;//implementar status do funcionario -> ativo, deixou a empresa, falecido, ferias...
     
     public Funcionario(String nome, int idade, String posicao, String escritorio, String descricao,
             LocalDateTime expire_date, Double salario, String status) {
