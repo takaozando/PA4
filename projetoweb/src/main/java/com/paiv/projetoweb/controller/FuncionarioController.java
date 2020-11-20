@@ -47,7 +47,7 @@ public class FuncionarioController {
     //Salva funcionario criado / Atualiza funcionario existente com o mesmo id
     @PostMapping("/cadastrarfuncionario")
     public String cadastrarFuncionario(@ModelAttribute Funcionario funcionario,@RequestParam("imagem") MultipartFile imagem){
-        ImagemPerfil img = new ImagemPerfil( imagem.getOriginalFilename(), imagem.getContentType(), compress (imagem.getBytes()));
+        //ImagemPerfil img = new ImagemPerfil( imagem.getOriginalFilename(), imagem.getContentType(), compress (imagem.getBytes()));
         funcionarioService.saveFuncionario(funcionario);
         return "redirect:/main/funcionarios";
     }

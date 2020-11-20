@@ -1,18 +1,27 @@
-Mon Nov 09 15:18:24 BRT 2020 Thread[Thread-5,5,main] Cleanup action starting
-ERROR XBM0J: Directory C:\Users\AntonioCanno\Desktop\PA4\projetoweb\dbapp already exists.
+----------------------------------------------------------------
+Thu Nov 19 21:38:34 BRT 2020:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.14.2.0 - (1828579): instance a816c00e-0175-e316-a930-000001b3cbc0 
+on database directory C:\Users\AntonioCanno\Desktop\PA4\projetoweb\dbapp with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@2626b418 
+Loaded from file:/C:/Users/AntonioCanno/.m2/repository/org/apache/derby/derby/10.14.2.0/derby-10.14.2.0.jar
+java.vendor=Oracle Corporation
+java.runtime.version=14.0.1+7
+user.dir=c:\Users\AntonioCanno\Desktop\PA4\projetoweb
+os.name=Windows 10
+os.arch=amd64
+os.version=10.0
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Thu Nov 19 21:44:24 BRT 2020:
+Shutting down instance a816c00e-0175-e316-a930-000001b3cbc0 on database directory C:\Users\AntonioCanno\Desktop\PA4\projetoweb\dbapp with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@2626b418 
+Thu Nov 19 21:44:24 BRT 2020 Thread[Thread-20,5,main] Cleanup action starting
+ERROR XBM0I: Directory dbapp cannot be removed.
 	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
 	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
-	at org.apache.derby.impl.services.monitor.StorageFactoryService$10.run(Unknown Source)
+	at org.apache.derby.iapi.services.monitor.Monitor.removePersistentService(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection$6.run(Unknown Source)
 	at java.base/java.security.AccessController.doPrivileged(AccessController.java:554)
-	at org.apache.derby.impl.services.monitor.StorageFactoryService.createServiceRoot(Unknown Source)
-	at org.apache.derby.impl.services.monitor.BaseMonitor.bootService(Unknown Source)
-	at org.apache.derby.impl.services.monitor.BaseMonitor.createPersistentService(Unknown Source)
-	at org.apache.derby.impl.services.monitor.FileMonitor.createPersistentService(Unknown Source)
-	at org.apache.derby.iapi.services.monitor.Monitor.createPersistentService(Unknown Source)
-	at org.apache.derby.impl.jdbc.EmbedConnection$5.run(Unknown Source)
-	at java.base/java.security.AccessController.doPrivileged(AccessController.java:554)
-	at org.apache.derby.impl.jdbc.EmbedConnection.createPersistentService(Unknown Source)
-	at org.apache.derby.impl.jdbc.EmbedConnection.createDatabase(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.removePersistentService(Unknown Source)
 	at org.apache.derby.impl.jdbc.EmbedConnection.<init>(Unknown Source)
 	at org.apache.derby.jdbc.InternalDriver$1.run(Unknown Source)
 	at org.apache.derby.jdbc.InternalDriver$1.run(Unknown Source)
@@ -25,118 +34,14 @@ ERROR XBM0J: Directory C:\Users\AntonioCanno\Desktop\PA4\projetoweb\dbapp alread
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
 	at java.base/java.lang.Thread.run(Thread.java:832)
 Cleanup action completed
-Mon Nov 09 15:18:24 BRT 2020 Thread[Thread-5,5,main] Cleanup action starting
-java.sql.SQLException: Failed to create database 'dbapp', see the next exception for details.
-	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
-	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
-	at org.apache.derby.impl.jdbc.Util.seeNextException(Unknown Source)
-	at org.apache.derby.impl.jdbc.EmbedConnection.createDatabase(Unknown Source)
-	at org.apache.derby.impl.jdbc.EmbedConnection.<init>(Unknown Source)
-	at org.apache.derby.jdbc.InternalDriver$1.run(Unknown Source)
-	at org.apache.derby.jdbc.InternalDriver$1.run(Unknown Source)
-	at java.base/java.security.AccessController.doPrivileged(AccessController.java:554)
-	at org.apache.derby.jdbc.InternalDriver.getNewEmbedConnection(Unknown Source)
-	at org.apache.derby.jdbc.InternalDriver$LoginCallable.call(Unknown Source)
-	at org.apache.derby.jdbc.InternalDriver$LoginCallable.call(Unknown Source)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-	at java.base/java.lang.Thread.run(Thread.java:832)
-Caused by: ERROR XJ041: Failed to create database 'dbapp', see the next exception for details.
-	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
-	at org.apache.derby.impl.jdbc.SQLExceptionFactory.wrapArgsForTransportAcrossDRDA(Unknown Source)
-	... 15 more
-Caused by: ERROR XBM0J: Directory C:\Users\AntonioCanno\Desktop\PA4\projetoweb\dbapp already exists.
+Thu Nov 19 21:44:24 BRT 2020 Thread[Thread-20,5,main] Cleanup action starting
+ERROR XBM0I: Directory dbapp cannot be removed.
 	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
 	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
-	at org.apache.derby.impl.services.monitor.StorageFactoryService$10.run(Unknown Source)
+	at org.apache.derby.iapi.services.monitor.Monitor.removePersistentService(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection$6.run(Unknown Source)
 	at java.base/java.security.AccessController.doPrivileged(AccessController.java:554)
-	at org.apache.derby.impl.services.monitor.StorageFactoryService.createServiceRoot(Unknown Source)
-	at org.apache.derby.impl.services.monitor.BaseMonitor.bootService(Unknown Source)
-	at org.apache.derby.impl.services.monitor.BaseMonitor.createPersistentService(Unknown Source)
-	at org.apache.derby.impl.services.monitor.FileMonitor.createPersistentService(Unknown Source)
-	at org.apache.derby.iapi.services.monitor.Monitor.createPersistentService(Unknown Source)
-	at org.apache.derby.impl.jdbc.EmbedConnection$5.run(Unknown Source)
-	at java.base/java.security.AccessController.doPrivileged(AccessController.java:554)
-	at org.apache.derby.impl.jdbc.EmbedConnection.createPersistentService(Unknown Source)
-	... 12 more
-============= begin nested exception, level (1) ===========
-java.sql.SQLException: Directory C:\Users\AntonioCanno\Desktop\PA4\projetoweb\dbapp already exists.
-	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
-	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source)
-	at org.apache.derby.impl.jdbc.TransactionResourceImpl.wrapInSQLException(Unknown Source)
-	at org.apache.derby.impl.jdbc.TransactionResourceImpl.handleException(Unknown Source)
-	at org.apache.derby.impl.jdbc.EmbedConnection.handleException(Unknown Source)
-	at org.apache.derby.impl.jdbc.EmbedConnection.createDatabase(Unknown Source)
-	at org.apache.derby.impl.jdbc.EmbedConnection.<init>(Unknown Source)
-	at org.apache.derby.jdbc.InternalDriver$1.run(Unknown Source)
-	at org.apache.derby.jdbc.InternalDriver$1.run(Unknown Source)
-	at java.base/java.security.AccessController.doPrivileged(AccessController.java:554)
-	at org.apache.derby.jdbc.InternalDriver.getNewEmbedConnection(Unknown Source)
-	at org.apache.derby.jdbc.InternalDriver$LoginCallable.call(Unknown Source)
-	at org.apache.derby.jdbc.InternalDriver$LoginCallable.call(Unknown Source)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-	at java.base/java.lang.Thread.run(Thread.java:832)
-Caused by: ERROR XBM0J: Directory C:\Users\AntonioCanno\Desktop\PA4\projetoweb\dbapp already exists.
-	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
-	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
-	at org.apache.derby.impl.services.monitor.StorageFactoryService$10.run(Unknown Source)
-	at java.base/java.security.AccessController.doPrivileged(AccessController.java:554)
-	at org.apache.derby.impl.services.monitor.StorageFactoryService.createServiceRoot(Unknown Source)
-	at org.apache.derby.impl.services.monitor.BaseMonitor.bootService(Unknown Source)
-	at org.apache.derby.impl.services.monitor.BaseMonitor.createPersistentService(Unknown Source)
-	at org.apache.derby.impl.services.monitor.FileMonitor.createPersistentService(Unknown Source)
-	at org.apache.derby.iapi.services.monitor.Monitor.createPersistentService(Unknown Source)
-	at org.apache.derby.impl.jdbc.EmbedConnection$5.run(Unknown Source)
-	at java.base/java.security.AccessController.doPrivileged(AccessController.java:554)
-	at org.apache.derby.impl.jdbc.EmbedConnection.createPersistentService(Unknown Source)
-	... 12 more
-============= end nested exception, level (1) ===========
-============= begin nested exception, level (2) ===========
-ERROR XBM0J: Directory C:\Users\AntonioCanno\Desktop\PA4\projetoweb\dbapp already exists.
-	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
-	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
-	at org.apache.derby.impl.services.monitor.StorageFactoryService$10.run(Unknown Source)
-	at java.base/java.security.AccessController.doPrivileged(AccessController.java:554)
-	at org.apache.derby.impl.services.monitor.StorageFactoryService.createServiceRoot(Unknown Source)
-	at org.apache.derby.impl.services.monitor.BaseMonitor.bootService(Unknown Source)
-	at org.apache.derby.impl.services.monitor.BaseMonitor.createPersistentService(Unknown Source)
-	at org.apache.derby.impl.services.monitor.FileMonitor.createPersistentService(Unknown Source)
-	at org.apache.derby.iapi.services.monitor.Monitor.createPersistentService(Unknown Source)
-	at org.apache.derby.impl.jdbc.EmbedConnection$5.run(Unknown Source)
-	at java.base/java.security.AccessController.doPrivileged(AccessController.java:554)
-	at org.apache.derby.impl.jdbc.EmbedConnection.createPersistentService(Unknown Source)
-	at org.apache.derby.impl.jdbc.EmbedConnection.createDatabase(Unknown Source)
-	at org.apache.derby.impl.jdbc.EmbedConnection.<init>(Unknown Source)
-	at org.apache.derby.jdbc.InternalDriver$1.run(Unknown Source)
-	at org.apache.derby.jdbc.InternalDriver$1.run(Unknown Source)
-	at java.base/java.security.AccessController.doPrivileged(AccessController.java:554)
-	at org.apache.derby.jdbc.InternalDriver.getNewEmbedConnection(Unknown Source)
-	at org.apache.derby.jdbc.InternalDriver$LoginCallable.call(Unknown Source)
-	at org.apache.derby.jdbc.InternalDriver$LoginCallable.call(Unknown Source)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-	at java.base/java.lang.Thread.run(Thread.java:832)
-============= end nested exception, level (2) ===========
-Cleanup action completed
-Mon Nov 09 15:18:28 BRT 2020 Thread[Thread-6,5,main] Cleanup action starting
-ERROR XBM0J: Directory C:\Users\AntonioCanno\Desktop\PA4\projetoweb\dbapp already exists.
-	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
-	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
-	at org.apache.derby.impl.services.monitor.StorageFactoryService$10.run(Unknown Source)
-	at java.base/java.security.AccessController.doPrivileged(AccessController.java:554)
-	at org.apache.derby.impl.services.monitor.StorageFactoryService.createServiceRoot(Unknown Source)
-	at org.apache.derby.impl.services.monitor.BaseMonitor.bootService(Unknown Source)
-	at org.apache.derby.impl.services.monitor.BaseMonitor.createPersistentService(Unknown Source)
-	at org.apache.derby.impl.services.monitor.FileMonitor.createPersistentService(Unknown Source)
-	at org.apache.derby.iapi.services.monitor.Monitor.createPersistentService(Unknown Source)
-	at org.apache.derby.impl.jdbc.EmbedConnection$5.run(Unknown Source)
-	at java.base/java.security.AccessController.doPrivileged(AccessController.java:554)
-	at org.apache.derby.impl.jdbc.EmbedConnection.createPersistentService(Unknown Source)
-	at org.apache.derby.impl.jdbc.EmbedConnection.createDatabase(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.removePersistentService(Unknown Source)
 	at org.apache.derby.impl.jdbc.EmbedConnection.<init>(Unknown Source)
 	at org.apache.derby.jdbc.InternalDriver$1.run(Unknown Source)
 	at org.apache.derby.jdbc.InternalDriver$1.run(Unknown Source)
@@ -149,118 +54,30 @@ ERROR XBM0J: Directory C:\Users\AntonioCanno\Desktop\PA4\projetoweb\dbapp alread
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
 	at java.base/java.lang.Thread.run(Thread.java:832)
 Cleanup action completed
-Mon Nov 09 15:18:28 BRT 2020 Thread[Thread-6,5,main] Cleanup action starting
-java.sql.SQLException: Failed to create database 'dbapp', see the next exception for details.
-	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
-	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
-	at org.apache.derby.impl.jdbc.Util.seeNextException(Unknown Source)
-	at org.apache.derby.impl.jdbc.EmbedConnection.createDatabase(Unknown Source)
-	at org.apache.derby.impl.jdbc.EmbedConnection.<init>(Unknown Source)
-	at org.apache.derby.jdbc.InternalDriver$1.run(Unknown Source)
-	at org.apache.derby.jdbc.InternalDriver$1.run(Unknown Source)
-	at java.base/java.security.AccessController.doPrivileged(AccessController.java:554)
-	at org.apache.derby.jdbc.InternalDriver.getNewEmbedConnection(Unknown Source)
-	at org.apache.derby.jdbc.InternalDriver$LoginCallable.call(Unknown Source)
-	at org.apache.derby.jdbc.InternalDriver$LoginCallable.call(Unknown Source)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-	at java.base/java.lang.Thread.run(Thread.java:832)
-Caused by: ERROR XJ041: Failed to create database 'dbapp', see the next exception for details.
-	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
-	at org.apache.derby.impl.jdbc.SQLExceptionFactory.wrapArgsForTransportAcrossDRDA(Unknown Source)
-	... 15 more
-Caused by: ERROR XBM0J: Directory C:\Users\AntonioCanno\Desktop\PA4\projetoweb\dbapp already exists.
+----------------------------------------------------------------
+Thu Nov 19 21:44:27 BRT 2020:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.14.2.0 - (1828579): instance 560c80d5-0175-e316-a930-000001b3cbc0 
+on database directory C:\Users\AntonioCanno\Desktop\PA4\projetoweb\dbapp with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@2626b418 
+Loaded from file:/C:/Users/AntonioCanno/.m2/repository/org/apache/derby/derby/10.14.2.0/derby-10.14.2.0.jar
+java.vendor=Oracle Corporation
+java.runtime.version=14.0.1+7
+user.dir=c:\Users\AntonioCanno\Desktop\PA4\projetoweb
+os.name=Windows 10
+os.arch=amd64
+os.version=10.0
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Thu Nov 19 21:49:25 BRT 2020:
+Shutting down instance 560c80d5-0175-e316-a930-000001b3cbc0 on database directory C:\Users\AntonioCanno\Desktop\PA4\projetoweb\dbapp with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@2626b418 
+Thu Nov 19 21:49:26 BRT 2020 Thread[Thread-36,5,main] Cleanup action starting
+ERROR XBM0I: Directory dbapp cannot be removed.
 	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
 	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
-	at org.apache.derby.impl.services.monitor.StorageFactoryService$10.run(Unknown Source)
+	at org.apache.derby.iapi.services.monitor.Monitor.removePersistentService(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection$6.run(Unknown Source)
 	at java.base/java.security.AccessController.doPrivileged(AccessController.java:554)
-	at org.apache.derby.impl.services.monitor.StorageFactoryService.createServiceRoot(Unknown Source)
-	at org.apache.derby.impl.services.monitor.BaseMonitor.bootService(Unknown Source)
-	at org.apache.derby.impl.services.monitor.BaseMonitor.createPersistentService(Unknown Source)
-	at org.apache.derby.impl.services.monitor.FileMonitor.createPersistentService(Unknown Source)
-	at org.apache.derby.iapi.services.monitor.Monitor.createPersistentService(Unknown Source)
-	at org.apache.derby.impl.jdbc.EmbedConnection$5.run(Unknown Source)
-	at java.base/java.security.AccessController.doPrivileged(AccessController.java:554)
-	at org.apache.derby.impl.jdbc.EmbedConnection.createPersistentService(Unknown Source)
-	... 12 more
-============= begin nested exception, level (1) ===========
-java.sql.SQLException: Directory C:\Users\AntonioCanno\Desktop\PA4\projetoweb\dbapp already exists.
-	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
-	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source)
-	at org.apache.derby.impl.jdbc.TransactionResourceImpl.wrapInSQLException(Unknown Source)
-	at org.apache.derby.impl.jdbc.TransactionResourceImpl.handleException(Unknown Source)
-	at org.apache.derby.impl.jdbc.EmbedConnection.handleException(Unknown Source)
-	at org.apache.derby.impl.jdbc.EmbedConnection.createDatabase(Unknown Source)
-	at org.apache.derby.impl.jdbc.EmbedConnection.<init>(Unknown Source)
-	at org.apache.derby.jdbc.InternalDriver$1.run(Unknown Source)
-	at org.apache.derby.jdbc.InternalDriver$1.run(Unknown Source)
-	at java.base/java.security.AccessController.doPrivileged(AccessController.java:554)
-	at org.apache.derby.jdbc.InternalDriver.getNewEmbedConnection(Unknown Source)
-	at org.apache.derby.jdbc.InternalDriver$LoginCallable.call(Unknown Source)
-	at org.apache.derby.jdbc.InternalDriver$LoginCallable.call(Unknown Source)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-	at java.base/java.lang.Thread.run(Thread.java:832)
-Caused by: ERROR XBM0J: Directory C:\Users\AntonioCanno\Desktop\PA4\projetoweb\dbapp already exists.
-	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
-	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
-	at org.apache.derby.impl.services.monitor.StorageFactoryService$10.run(Unknown Source)
-	at java.base/java.security.AccessController.doPrivileged(AccessController.java:554)
-	at org.apache.derby.impl.services.monitor.StorageFactoryService.createServiceRoot(Unknown Source)
-	at org.apache.derby.impl.services.monitor.BaseMonitor.bootService(Unknown Source)
-	at org.apache.derby.impl.services.monitor.BaseMonitor.createPersistentService(Unknown Source)
-	at org.apache.derby.impl.services.monitor.FileMonitor.createPersistentService(Unknown Source)
-	at org.apache.derby.iapi.services.monitor.Monitor.createPersistentService(Unknown Source)
-	at org.apache.derby.impl.jdbc.EmbedConnection$5.run(Unknown Source)
-	at java.base/java.security.AccessController.doPrivileged(AccessController.java:554)
-	at org.apache.derby.impl.jdbc.EmbedConnection.createPersistentService(Unknown Source)
-	... 12 more
-============= end nested exception, level (1) ===========
-============= begin nested exception, level (2) ===========
-ERROR XBM0J: Directory C:\Users\AntonioCanno\Desktop\PA4\projetoweb\dbapp already exists.
-	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
-	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
-	at org.apache.derby.impl.services.monitor.StorageFactoryService$10.run(Unknown Source)
-	at java.base/java.security.AccessController.doPrivileged(AccessController.java:554)
-	at org.apache.derby.impl.services.monitor.StorageFactoryService.createServiceRoot(Unknown Source)
-	at org.apache.derby.impl.services.monitor.BaseMonitor.bootService(Unknown Source)
-	at org.apache.derby.impl.services.monitor.BaseMonitor.createPersistentService(Unknown Source)
-	at org.apache.derby.impl.services.monitor.FileMonitor.createPersistentService(Unknown Source)
-	at org.apache.derby.iapi.services.monitor.Monitor.createPersistentService(Unknown Source)
-	at org.apache.derby.impl.jdbc.EmbedConnection$5.run(Unknown Source)
-	at java.base/java.security.AccessController.doPrivileged(AccessController.java:554)
-	at org.apache.derby.impl.jdbc.EmbedConnection.createPersistentService(Unknown Source)
-	at org.apache.derby.impl.jdbc.EmbedConnection.createDatabase(Unknown Source)
-	at org.apache.derby.impl.jdbc.EmbedConnection.<init>(Unknown Source)
-	at org.apache.derby.jdbc.InternalDriver$1.run(Unknown Source)
-	at org.apache.derby.jdbc.InternalDriver$1.run(Unknown Source)
-	at java.base/java.security.AccessController.doPrivileged(AccessController.java:554)
-	at org.apache.derby.jdbc.InternalDriver.getNewEmbedConnection(Unknown Source)
-	at org.apache.derby.jdbc.InternalDriver$LoginCallable.call(Unknown Source)
-	at org.apache.derby.jdbc.InternalDriver$LoginCallable.call(Unknown Source)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-	at java.base/java.lang.Thread.run(Thread.java:832)
-============= end nested exception, level (2) ===========
-Cleanup action completed
-Mon Nov 09 15:18:31 BRT 2020 Thread[Thread-11,5,main] Cleanup action starting
-ERROR XBM0J: Directory C:\Users\AntonioCanno\Desktop\PA4\projetoweb\dbapp already exists.
-	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
-	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
-	at org.apache.derby.impl.services.monitor.StorageFactoryService$10.run(Unknown Source)
-	at java.base/java.security.AccessController.doPrivileged(AccessController.java:554)
-	at org.apache.derby.impl.services.monitor.StorageFactoryService.createServiceRoot(Unknown Source)
-	at org.apache.derby.impl.services.monitor.BaseMonitor.bootService(Unknown Source)
-	at org.apache.derby.impl.services.monitor.BaseMonitor.createPersistentService(Unknown Source)
-	at org.apache.derby.impl.services.monitor.FileMonitor.createPersistentService(Unknown Source)
-	at org.apache.derby.iapi.services.monitor.Monitor.createPersistentService(Unknown Source)
-	at org.apache.derby.impl.jdbc.EmbedConnection$5.run(Unknown Source)
-	at java.base/java.security.AccessController.doPrivileged(AccessController.java:554)
-	at org.apache.derby.impl.jdbc.EmbedConnection.createPersistentService(Unknown Source)
-	at org.apache.derby.impl.jdbc.EmbedConnection.createDatabase(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.removePersistentService(Unknown Source)
 	at org.apache.derby.impl.jdbc.EmbedConnection.<init>(Unknown Source)
 	at org.apache.derby.jdbc.InternalDriver$1.run(Unknown Source)
 	at org.apache.derby.jdbc.InternalDriver$1.run(Unknown Source)
@@ -273,118 +90,14 @@ ERROR XBM0J: Directory C:\Users\AntonioCanno\Desktop\PA4\projetoweb\dbapp alread
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
 	at java.base/java.lang.Thread.run(Thread.java:832)
 Cleanup action completed
-Mon Nov 09 15:18:31 BRT 2020 Thread[Thread-11,5,main] Cleanup action starting
-java.sql.SQLException: Failed to create database 'dbapp', see the next exception for details.
-	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
-	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
-	at org.apache.derby.impl.jdbc.Util.seeNextException(Unknown Source)
-	at org.apache.derby.impl.jdbc.EmbedConnection.createDatabase(Unknown Source)
-	at org.apache.derby.impl.jdbc.EmbedConnection.<init>(Unknown Source)
-	at org.apache.derby.jdbc.InternalDriver$1.run(Unknown Source)
-	at org.apache.derby.jdbc.InternalDriver$1.run(Unknown Source)
-	at java.base/java.security.AccessController.doPrivileged(AccessController.java:554)
-	at org.apache.derby.jdbc.InternalDriver.getNewEmbedConnection(Unknown Source)
-	at org.apache.derby.jdbc.InternalDriver$LoginCallable.call(Unknown Source)
-	at org.apache.derby.jdbc.InternalDriver$LoginCallable.call(Unknown Source)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-	at java.base/java.lang.Thread.run(Thread.java:832)
-Caused by: ERROR XJ041: Failed to create database 'dbapp', see the next exception for details.
-	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
-	at org.apache.derby.impl.jdbc.SQLExceptionFactory.wrapArgsForTransportAcrossDRDA(Unknown Source)
-	... 15 more
-Caused by: ERROR XBM0J: Directory C:\Users\AntonioCanno\Desktop\PA4\projetoweb\dbapp already exists.
+Thu Nov 19 21:49:26 BRT 2020 Thread[Thread-36,5,main] Cleanup action starting
+ERROR XBM0I: Directory dbapp cannot be removed.
 	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
 	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
-	at org.apache.derby.impl.services.monitor.StorageFactoryService$10.run(Unknown Source)
+	at org.apache.derby.iapi.services.monitor.Monitor.removePersistentService(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection$6.run(Unknown Source)
 	at java.base/java.security.AccessController.doPrivileged(AccessController.java:554)
-	at org.apache.derby.impl.services.monitor.StorageFactoryService.createServiceRoot(Unknown Source)
-	at org.apache.derby.impl.services.monitor.BaseMonitor.bootService(Unknown Source)
-	at org.apache.derby.impl.services.monitor.BaseMonitor.createPersistentService(Unknown Source)
-	at org.apache.derby.impl.services.monitor.FileMonitor.createPersistentService(Unknown Source)
-	at org.apache.derby.iapi.services.monitor.Monitor.createPersistentService(Unknown Source)
-	at org.apache.derby.impl.jdbc.EmbedConnection$5.run(Unknown Source)
-	at java.base/java.security.AccessController.doPrivileged(AccessController.java:554)
-	at org.apache.derby.impl.jdbc.EmbedConnection.createPersistentService(Unknown Source)
-	... 12 more
-============= begin nested exception, level (1) ===========
-java.sql.SQLException: Directory C:\Users\AntonioCanno\Desktop\PA4\projetoweb\dbapp already exists.
-	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
-	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source)
-	at org.apache.derby.impl.jdbc.TransactionResourceImpl.wrapInSQLException(Unknown Source)
-	at org.apache.derby.impl.jdbc.TransactionResourceImpl.handleException(Unknown Source)
-	at org.apache.derby.impl.jdbc.EmbedConnection.handleException(Unknown Source)
-	at org.apache.derby.impl.jdbc.EmbedConnection.createDatabase(Unknown Source)
-	at org.apache.derby.impl.jdbc.EmbedConnection.<init>(Unknown Source)
-	at org.apache.derby.jdbc.InternalDriver$1.run(Unknown Source)
-	at org.apache.derby.jdbc.InternalDriver$1.run(Unknown Source)
-	at java.base/java.security.AccessController.doPrivileged(AccessController.java:554)
-	at org.apache.derby.jdbc.InternalDriver.getNewEmbedConnection(Unknown Source)
-	at org.apache.derby.jdbc.InternalDriver$LoginCallable.call(Unknown Source)
-	at org.apache.derby.jdbc.InternalDriver$LoginCallable.call(Unknown Source)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-	at java.base/java.lang.Thread.run(Thread.java:832)
-Caused by: ERROR XBM0J: Directory C:\Users\AntonioCanno\Desktop\PA4\projetoweb\dbapp already exists.
-	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
-	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
-	at org.apache.derby.impl.services.monitor.StorageFactoryService$10.run(Unknown Source)
-	at java.base/java.security.AccessController.doPrivileged(AccessController.java:554)
-	at org.apache.derby.impl.services.monitor.StorageFactoryService.createServiceRoot(Unknown Source)
-	at org.apache.derby.impl.services.monitor.BaseMonitor.bootService(Unknown Source)
-	at org.apache.derby.impl.services.monitor.BaseMonitor.createPersistentService(Unknown Source)
-	at org.apache.derby.impl.services.monitor.FileMonitor.createPersistentService(Unknown Source)
-	at org.apache.derby.iapi.services.monitor.Monitor.createPersistentService(Unknown Source)
-	at org.apache.derby.impl.jdbc.EmbedConnection$5.run(Unknown Source)
-	at java.base/java.security.AccessController.doPrivileged(AccessController.java:554)
-	at org.apache.derby.impl.jdbc.EmbedConnection.createPersistentService(Unknown Source)
-	... 12 more
-============= end nested exception, level (1) ===========
-============= begin nested exception, level (2) ===========
-ERROR XBM0J: Directory C:\Users\AntonioCanno\Desktop\PA4\projetoweb\dbapp already exists.
-	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
-	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
-	at org.apache.derby.impl.services.monitor.StorageFactoryService$10.run(Unknown Source)
-	at java.base/java.security.AccessController.doPrivileged(AccessController.java:554)
-	at org.apache.derby.impl.services.monitor.StorageFactoryService.createServiceRoot(Unknown Source)
-	at org.apache.derby.impl.services.monitor.BaseMonitor.bootService(Unknown Source)
-	at org.apache.derby.impl.services.monitor.BaseMonitor.createPersistentService(Unknown Source)
-	at org.apache.derby.impl.services.monitor.FileMonitor.createPersistentService(Unknown Source)
-	at org.apache.derby.iapi.services.monitor.Monitor.createPersistentService(Unknown Source)
-	at org.apache.derby.impl.jdbc.EmbedConnection$5.run(Unknown Source)
-	at java.base/java.security.AccessController.doPrivileged(AccessController.java:554)
-	at org.apache.derby.impl.jdbc.EmbedConnection.createPersistentService(Unknown Source)
-	at org.apache.derby.impl.jdbc.EmbedConnection.createDatabase(Unknown Source)
-	at org.apache.derby.impl.jdbc.EmbedConnection.<init>(Unknown Source)
-	at org.apache.derby.jdbc.InternalDriver$1.run(Unknown Source)
-	at org.apache.derby.jdbc.InternalDriver$1.run(Unknown Source)
-	at java.base/java.security.AccessController.doPrivileged(AccessController.java:554)
-	at org.apache.derby.jdbc.InternalDriver.getNewEmbedConnection(Unknown Source)
-	at org.apache.derby.jdbc.InternalDriver$LoginCallable.call(Unknown Source)
-	at org.apache.derby.jdbc.InternalDriver$LoginCallable.call(Unknown Source)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-	at java.base/java.lang.Thread.run(Thread.java:832)
-============= end nested exception, level (2) ===========
-Cleanup action completed
-Mon Nov 09 15:18:33 BRT 2020 Thread[Thread-12,5,main] Cleanup action starting
-ERROR XBM0J: Directory C:\Users\AntonioCanno\Desktop\PA4\projetoweb\dbapp already exists.
-	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
-	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
-	at org.apache.derby.impl.services.monitor.StorageFactoryService$10.run(Unknown Source)
-	at java.base/java.security.AccessController.doPrivileged(AccessController.java:554)
-	at org.apache.derby.impl.services.monitor.StorageFactoryService.createServiceRoot(Unknown Source)
-	at org.apache.derby.impl.services.monitor.BaseMonitor.bootService(Unknown Source)
-	at org.apache.derby.impl.services.monitor.BaseMonitor.createPersistentService(Unknown Source)
-	at org.apache.derby.impl.services.monitor.FileMonitor.createPersistentService(Unknown Source)
-	at org.apache.derby.iapi.services.monitor.Monitor.createPersistentService(Unknown Source)
-	at org.apache.derby.impl.jdbc.EmbedConnection$5.run(Unknown Source)
-	at java.base/java.security.AccessController.doPrivileged(AccessController.java:554)
-	at org.apache.derby.impl.jdbc.EmbedConnection.createPersistentService(Unknown Source)
-	at org.apache.derby.impl.jdbc.EmbedConnection.createDatabase(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.removePersistentService(Unknown Source)
 	at org.apache.derby.impl.jdbc.EmbedConnection.<init>(Unknown Source)
 	at org.apache.derby.jdbc.InternalDriver$1.run(Unknown Source)
 	at org.apache.derby.jdbc.InternalDriver$1.run(Unknown Source)
@@ -397,100 +110,16 @@ ERROR XBM0J: Directory C:\Users\AntonioCanno\Desktop\PA4\projetoweb\dbapp alread
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
 	at java.base/java.lang.Thread.run(Thread.java:832)
 Cleanup action completed
-Mon Nov 09 15:18:33 BRT 2020 Thread[Thread-12,5,main] Cleanup action starting
-java.sql.SQLException: Failed to create database 'dbapp', see the next exception for details.
-	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
-	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
-	at org.apache.derby.impl.jdbc.Util.seeNextException(Unknown Source)
-	at org.apache.derby.impl.jdbc.EmbedConnection.createDatabase(Unknown Source)
-	at org.apache.derby.impl.jdbc.EmbedConnection.<init>(Unknown Source)
-	at org.apache.derby.jdbc.InternalDriver$1.run(Unknown Source)
-	at org.apache.derby.jdbc.InternalDriver$1.run(Unknown Source)
-	at java.base/java.security.AccessController.doPrivileged(AccessController.java:554)
-	at org.apache.derby.jdbc.InternalDriver.getNewEmbedConnection(Unknown Source)
-	at org.apache.derby.jdbc.InternalDriver$LoginCallable.call(Unknown Source)
-	at org.apache.derby.jdbc.InternalDriver$LoginCallable.call(Unknown Source)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-	at java.base/java.lang.Thread.run(Thread.java:832)
-Caused by: ERROR XJ041: Failed to create database 'dbapp', see the next exception for details.
-	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
-	at org.apache.derby.impl.jdbc.SQLExceptionFactory.wrapArgsForTransportAcrossDRDA(Unknown Source)
-	... 15 more
-Caused by: ERROR XBM0J: Directory C:\Users\AntonioCanno\Desktop\PA4\projetoweb\dbapp already exists.
-	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
-	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
-	at org.apache.derby.impl.services.monitor.StorageFactoryService$10.run(Unknown Source)
-	at java.base/java.security.AccessController.doPrivileged(AccessController.java:554)
-	at org.apache.derby.impl.services.monitor.StorageFactoryService.createServiceRoot(Unknown Source)
-	at org.apache.derby.impl.services.monitor.BaseMonitor.bootService(Unknown Source)
-	at org.apache.derby.impl.services.monitor.BaseMonitor.createPersistentService(Unknown Source)
-	at org.apache.derby.impl.services.monitor.FileMonitor.createPersistentService(Unknown Source)
-	at org.apache.derby.iapi.services.monitor.Monitor.createPersistentService(Unknown Source)
-	at org.apache.derby.impl.jdbc.EmbedConnection$5.run(Unknown Source)
-	at java.base/java.security.AccessController.doPrivileged(AccessController.java:554)
-	at org.apache.derby.impl.jdbc.EmbedConnection.createPersistentService(Unknown Source)
-	... 12 more
-============= begin nested exception, level (1) ===========
-java.sql.SQLException: Directory C:\Users\AntonioCanno\Desktop\PA4\projetoweb\dbapp already exists.
-	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
-	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source)
-	at org.apache.derby.impl.jdbc.TransactionResourceImpl.wrapInSQLException(Unknown Source)
-	at org.apache.derby.impl.jdbc.TransactionResourceImpl.handleException(Unknown Source)
-	at org.apache.derby.impl.jdbc.EmbedConnection.handleException(Unknown Source)
-	at org.apache.derby.impl.jdbc.EmbedConnection.createDatabase(Unknown Source)
-	at org.apache.derby.impl.jdbc.EmbedConnection.<init>(Unknown Source)
-	at org.apache.derby.jdbc.InternalDriver$1.run(Unknown Source)
-	at org.apache.derby.jdbc.InternalDriver$1.run(Unknown Source)
-	at java.base/java.security.AccessController.doPrivileged(AccessController.java:554)
-	at org.apache.derby.jdbc.InternalDriver.getNewEmbedConnection(Unknown Source)
-	at org.apache.derby.jdbc.InternalDriver$LoginCallable.call(Unknown Source)
-	at org.apache.derby.jdbc.InternalDriver$LoginCallable.call(Unknown Source)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-	at java.base/java.lang.Thread.run(Thread.java:832)
-Caused by: ERROR XBM0J: Directory C:\Users\AntonioCanno\Desktop\PA4\projetoweb\dbapp already exists.
-	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
-	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
-	at org.apache.derby.impl.services.monitor.StorageFactoryService$10.run(Unknown Source)
-	at java.base/java.security.AccessController.doPrivileged(AccessController.java:554)
-	at org.apache.derby.impl.services.monitor.StorageFactoryService.createServiceRoot(Unknown Source)
-	at org.apache.derby.impl.services.monitor.BaseMonitor.bootService(Unknown Source)
-	at org.apache.derby.impl.services.monitor.BaseMonitor.createPersistentService(Unknown Source)
-	at org.apache.derby.impl.services.monitor.FileMonitor.createPersistentService(Unknown Source)
-	at org.apache.derby.iapi.services.monitor.Monitor.createPersistentService(Unknown Source)
-	at org.apache.derby.impl.jdbc.EmbedConnection$5.run(Unknown Source)
-	at java.base/java.security.AccessController.doPrivileged(AccessController.java:554)
-	at org.apache.derby.impl.jdbc.EmbedConnection.createPersistentService(Unknown Source)
-	... 12 more
-============= end nested exception, level (1) ===========
-============= begin nested exception, level (2) ===========
-ERROR XBM0J: Directory C:\Users\AntonioCanno\Desktop\PA4\projetoweb\dbapp already exists.
-	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
-	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
-	at org.apache.derby.impl.services.monitor.StorageFactoryService$10.run(Unknown Source)
-	at java.base/java.security.AccessController.doPrivileged(AccessController.java:554)
-	at org.apache.derby.impl.services.monitor.StorageFactoryService.createServiceRoot(Unknown Source)
-	at org.apache.derby.impl.services.monitor.BaseMonitor.bootService(Unknown Source)
-	at org.apache.derby.impl.services.monitor.BaseMonitor.createPersistentService(Unknown Source)
-	at org.apache.derby.impl.services.monitor.FileMonitor.createPersistentService(Unknown Source)
-	at org.apache.derby.iapi.services.monitor.Monitor.createPersistentService(Unknown Source)
-	at org.apache.derby.impl.jdbc.EmbedConnection$5.run(Unknown Source)
-	at java.base/java.security.AccessController.doPrivileged(AccessController.java:554)
-	at org.apache.derby.impl.jdbc.EmbedConnection.createPersistentService(Unknown Source)
-	at org.apache.derby.impl.jdbc.EmbedConnection.createDatabase(Unknown Source)
-	at org.apache.derby.impl.jdbc.EmbedConnection.<init>(Unknown Source)
-	at org.apache.derby.jdbc.InternalDriver$1.run(Unknown Source)
-	at org.apache.derby.jdbc.InternalDriver$1.run(Unknown Source)
-	at java.base/java.security.AccessController.doPrivileged(AccessController.java:554)
-	at org.apache.derby.jdbc.InternalDriver.getNewEmbedConnection(Unknown Source)
-	at org.apache.derby.jdbc.InternalDriver$LoginCallable.call(Unknown Source)
-	at org.apache.derby.jdbc.InternalDriver$LoginCallable.call(Unknown Source)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-	at java.base/java.lang.Thread.run(Thread.java:832)
-============= end nested exception, level (2) ===========
-Cleanup action completed
+----------------------------------------------------------------
+Thu Nov 19 21:49:27 BRT 2020:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.14.2.0 - (1828579): instance a0200101-0175-e316-a930-000001b3cbc0 
+on database directory C:\Users\AntonioCanno\Desktop\PA4\projetoweb\dbapp with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@2626b418 
+Loaded from file:/C:/Users/AntonioCanno/.m2/repository/org/apache/derby/derby/10.14.2.0/derby-10.14.2.0.jar
+java.vendor=Oracle Corporation
+java.runtime.version=14.0.1+7
+user.dir=c:\Users\AntonioCanno\Desktop\PA4\projetoweb
+os.name=Windows 10
+os.arch=amd64
+os.version=10.0
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''
