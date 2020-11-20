@@ -25,7 +25,7 @@
                 <div class="col-12">
                     <nav class="navbar navbar-expand-xl navbar-light bg-light">
                         <a class="navbar-brand" href="#">
-                            <i class="fas fa-3x fa-briefcase tm-site-icon"></i>
+                            <em class="fas fa-3x fa-briefcase tm-site-icon"></em>
                             <h1 class="tm-site-title mb-0">Gestão PAIV</h1>
                         </a>
                         <button class="navbar-toggler ml-auto mr-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -62,8 +62,8 @@
                             </ul>
                             <ul class="navbar-nav">
                                 <li class="nav-item">
-                                    <a class="nav-link d-flex" href="login.html">
-                                        <i class="far fa-user mr-2 tm-logout-icon"></i>
+                                    <a class="nav-link d-flex" href="/login">
+                                        <em class="far fa-user mr-2 tm-logout-icon"></em>
                                         <span>Sair</span>
                                     </a>
                                 </li>
@@ -104,23 +104,12 @@
                             </div>
                         </div>
                         <table>
+                            
                             <tr th:each="funcionario: ${funcionarios}" class="tm-list-group tm-list-group-alternate-color tm-list-group-pad-big">
                                 <td th:text="${funcionario.nome}"></td>
                             </tr>
+                     
                         </table>
-                        <!--
-                        <ol class="tm-list-group tm-list-group-alternate-color tm-list-group-pad-big">
-                            <li class="tm-list-group-item">
-                                Tatiane Nair Débora Brito
-                            </li>
-                            <li class="tm-list-group-item">
-                                Enzo João Drumond
-                            </li>
-                            <li class="tm-list-group-item">
-                                Edson Miguel Bernardo da Silva
-                            </li>
-                        </ol>
-                        -->
                     </div>
                 </div>
                 <div class="tm-col tm-col-big">
