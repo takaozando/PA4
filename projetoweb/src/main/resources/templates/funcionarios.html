@@ -47,10 +47,6 @@
                                 <li class="nav-item">
                                     <a class="nav-link" href="/contas">Contas</a>
                                 </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
-                                        aria-expanded="false">
-                                        Configurações
                                     </a>
                                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                         <a class="dropdown-item" href="#">Perfil</a>
@@ -93,7 +89,7 @@
                                         <th scope="col">Idade</th>
                                         <th scope="col" class="text-center">Cargo</th>
                                         <th scope="col" class="text-center">Escritório</th>
-                                        <th scope="col">Salário (R$)</th>
+                                        <th scope="col" class="text-center">Salário(R$)</th>
                                         <th scope="col">&nbsp;</th>
                                         <th scope="col">&nbsp;</th>
                                     </tr>
@@ -104,7 +100,7 @@
                                         <td th:text="${funcionario.nome}"></td>
                                         <td th:text="${funcionario.idade}"></td>
                                         <td th:text="${funcionario.posicao}"></td>
-                                        <td th:text="${funcionario.escritorio}"></td>
+                                        <td class="text-center" th:text="${funcionario.escritorio}"></td>
                                         <td th:text="${funcionario.salario}"></td>
                                         <td>
                                             <a th:href="@{'/main/editarfuncionario?codigo=' + ${funcionario.codigo}}">
@@ -113,7 +109,7 @@
                                         </td>
                                         <td>
                                             <a  th:href="@{'/main/removerfuncionario?codigo=' + ${funcionario.codigo}}"
-                                                onclick="return confirm('Remover?, esta ação é irreversível.')">
+                                                onclick="return confirm('Remover? Esta ação é irreversível.')">
                                             <button type="button" class="btn btn-danger">
                                                 Remover
                                             </button></a>

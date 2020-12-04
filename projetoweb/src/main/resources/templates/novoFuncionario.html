@@ -39,16 +39,6 @@
                                     <span class="sr-only">(current)</span>
                                 </a>
                             </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
-                                    aria-expanded="false">
-                                    Relatórios
-                                </a>
-                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="#">Relatório diários</a>
-                                    <a class="dropdown-item" href="#">Relatório mensal</a>
-                                    <a class="dropdown-item" href="#">Relatório anual</a>
-                                </div>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link active" href="/main/funcionarios">Funcionários</a>
@@ -57,10 +47,6 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="/contas">Contas</a>
                             </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
-                                    aria-expanded="false">
-                                    Configurações
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                     <a class="dropdown-item" href="#">Perfil</a>
@@ -83,15 +69,15 @@
         </div>
         <!-- row -->
         <div class="row tm-mt-big">
-            <div class="col-xl-12 col-lg-10 col-md-12 col-sm-12">
+            <div class="col-xl-12 col-lg-10 col-md-12 col-sm-12 ">
                 <div class="bg-white tm-block">
                     <div class="row">
-                        <div class="col-12">
-                            <h2 class="tm-block-title d-inline-block">Adicionar pessoa</h2>
+                        <div class="col-12 text-center">
+                            <h2 class="tm-block-title d-inline-block ">Adicionar funcionario</h2>
                         </div>
                     </div>
                     <div class="row mt-4 tm-edit-product-row">
-                        <div class="col-xl-7 col-lg-7 col-md-12">
+                        <div class="col-xl-12 col-lg-7 col-md-12">
                             <form th:action="@{/main/cadastrarfuncionario}" th:object="${funcionario}" method="POST" class="tm-edit-product-form">
                                 <div class="input-group mb-3">
                                     <label for="nome" class="col-xl-4 col-lg-4 col-md-4 col-sm-5 col-form-label">Nome
@@ -102,11 +88,6 @@
                                     <label for="escritorio" class="col-xl-4 col-lg-4 col-md-4 col-sm-5 col-form-label">Escritório
                                     </label>
                                     <input id="escritorio" name="escritorio" type="text" class="form-control validate col-xl-9 col-lg-8 col-md-8 col-sm-7" required>
-                                </div>
-                                <div class="input-group mb-3">
-                                    <label for="descricao" class="col-xl-4 col-lg-4 col-md-4 col-sm-5 col-form-label">Descrição
-                                    </label>
-                                    <input id="descricao" name="descricao" type="text" class="form-control validate col-xl-9 col-lg-8 col-md-8 col-sm-7" required>
                                 </div>
                                 <div class="input-group mb-3">
                                     <label for="posicao" class="col-xl-4 col-lg-4 col-md-4 col-sm-5 col-form-label">Posição</label>
@@ -142,23 +123,13 @@
                                     <input id="salario" name="salario" type="number" min="0" class="form-control validate col-xl-9 col-lg-8 col-md-7 col-sm-7" required>
                                 </div>
                                 <div class="input-group mb-3">
-                                    <div class="ml-auto col-xl-8 col-lg-8 col-md-8 col-sm-7 pl-0">
-                                        <button type="submit" class="btn btn-primary">Aplicar
+                                    <div class=" text-center ml-auto col-xl-12 col-lg-4 col-md-4 col-sm-5 pl-0">
+                                        <button type="submit" class="btn btn-primary">Salvar
                                         </button>
                                     </div>
                                 </div>
                             </form>
-                        </div>
-                        <div class="col-xl-4 col-lg-4 col-md-12 mx-auto mb-4">
-                            <div class="tm-product-img-dummy mx-auto">
-                                <i class="fas fa-5x fa-cloud-upload-alt" onclick="document.getElementById('fileInput').click();"></i>
-                            </div>
-                            <div class="custom-file mt-3 mb-3">
-                                <input id="fileInput" type="file" style="display:none;" />
-                                <input type="button" class="btn btn-primary d-block mx-auto" value="Enviar imagem..." onclick="document.getElementById('fileInput').click();"
-                                />
-                            </div>
-                        </div>
+                        </div>  
                     </div>
                 </div>
             </div>

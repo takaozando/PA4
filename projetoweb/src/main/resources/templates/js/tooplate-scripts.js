@@ -94,7 +94,7 @@ function drawBarChart() {
         datasets: [
           {
             label: "# of Hits",
-            data: [12, 19, 3, 5, 2, 3],
+            data: [12, 19, 3, 5, 2, 10],
             backgroundColor: [
               "rgba(255, 99, 132, 0.2)",
               "rgba(54, 162, 235, 0.2)",
@@ -139,10 +139,12 @@ function drawPieChart() {
             backgroundColor: [
               window.chartColors.purple,
               window.chartColors.green,
-              window.chartColors.blue,
+              window.chartColors.blue
+              /*
               window.chartColors.red,
               window.chartColors.yellow,
               window.chartColors.orange
+              */
             ],
             label: "Storage"
           }
