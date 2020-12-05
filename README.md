@@ -14,7 +14,7 @@ https://trello.com/b/hqPkavKL/front-end
 https://trello.com/b/tsoysB96/back-end
 # Desenvolvido por:
 * Antonio Canno: https://github.com/tonicocanno
-* Gustavo Takao:
+* Gustavo Takao: https://github.com/takaozando
 * Lucas Nobrega: https://github.com/LucasNob
 * Matheus Jacob: https://github.com/Matheus-jacobb
 * Pablo Henrique: https://github.com/Pablo-monfre
