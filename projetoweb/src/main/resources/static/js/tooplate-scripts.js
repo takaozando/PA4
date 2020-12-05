@@ -37,14 +37,14 @@ function drawLineChart() {
             label: "Admissões",
             data: [88, 68, 79, 57, 56, 55, 70],
             fill: false,
-            borderColor: "rgb(75, 192, 192)",
+            borderColor: "rgba(150,225,45,1)",
             lineTension: 0.1
           },
           {
             label: "Demissão",
             data: [33, 45, 37, 21, 55, 74, 69],
             fill: false,
-            borderColor: "rgba(255,99,132,1)",
+            borderColor: "rgba(255,99,120,1)",
             lineTension: 0.1
           }
         ]
@@ -130,7 +130,7 @@ function drawPieChart() {
       data: {
         datasets: [
           {
-            data: [4, 5, 3, 1],
+            data: [4, 2, 1, 6],
             backgroundColor: [
               window.chartColors.purple,
               window.chartColors.green,

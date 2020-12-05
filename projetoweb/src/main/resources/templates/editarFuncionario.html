@@ -8,13 +8,9 @@
     <title>PAIV - Editar funcionário</title>
     
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600">
-    <!-- https://fonts.google.com/specimen/Open+Sans -->
     <link rel="stylesheet" href="/css/fontawesome.min.css">
-    <!-- https://fontawesome.com/ -->
     <link rel="stylesheet" href="/css/fullcalendar.min.css">
-    <!-- https://fullcalendar.io/ -->
     <link rel="stylesheet" href="/css/bootstrap.min.css">
-    <!-- https://getbootstrap.com/ -->
     <link rel="stylesheet" href="/css/tooplate.css">
 </head>
 
@@ -22,7 +18,7 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <nav class="navbar navbar-expand-xl navbar-light bg-light">
+                <nav class="tm-border navbar navbar-expand-xl navbar-light bg-light">
                     <a class="navbar-brand" href="/gestao">
                         <em class="fas fa-3x fa-briefcase tm-site-icon"></em>
                         <h1 class="tm-site-title mb-0">Gestão PAIV</h1>
@@ -35,16 +31,16 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav mx-auto">
                             <li class="nav-item">
-                                <a class="nav-link" href="/gestao">Gestão
+                                <a class="tm-border nav-link" href="/gestao">Gestão
                                     <span class="sr-only">(current)</span>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" href="/main/funcionarios">Funcionários</a>
+                                <a class="tm-border nav-link active" href="/main/funcionarios">Funcionários</a>
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link" href="/contas">Contas</a>
+                                <a class="tm-border nav-link" href="/contas">Contas</a>
                             </li>
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -56,7 +52,7 @@
                         </ul>
                         <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a class="nav-link d-flex" href="/entrar">
+                                <a class="tm-border nav-link d-flex" href="/entrar">
                                     <em class="far fa-user mr-2 tm-logout-icon"></em>
                                     <span>Sair</span>
                                 </a>
@@ -69,7 +65,7 @@
         <!-- row -->
         <div class="row tm-mt-big">
             <div class="col-xl-12 col-lg-10 col-md-12 col-sm-12">
-                <div class="bg-white tm-block">
+                <div class="tm-border tm-bg-white2 tm-block">
                     <div class="row">
                         <div class="col-12">
                             <h2 class="tm-block-title d-inline-block">Editar</h2>
@@ -154,11 +150,8 @@
     </div>
 
     <script src="/js/jquery-3.3.1.min.js"></script>
-    <!-- https://jquery.com/download/ -->
     <script src="/jquery-ui-datepicker/jquery-ui.min.js"></script>
-    <!-- https://jqueryui.com/download/ -->
     <script src="/bootstrap.min.js"></script>
-    <!-- https://getbootstrap.com/ -->
     <script>
         $(function () {
             $('#expire_date').datepicker();
