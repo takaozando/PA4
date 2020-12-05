@@ -34,21 +34,21 @@ function drawLineChart() {
         ],
         datasets: [
           {
-            label: "Latest Hits",
+            label: "Admissões",
             data: [88, 68, 79, 57, 56, 55, 70],
             fill: false,
             borderColor: "rgb(75, 192, 192)",
             lineTension: 0.1
           },
           {
-            label: "Popular Hits",
+            label: "Desligamentos",
             data: [33, 45, 37, 21, 55, 74, 69],
             fill: false,
             borderColor: "rgba(255,99,132,1)",
             lineTension: 0.1
           },
           {
-            label: "Featured",
+            label: "Faturamento",
             data: [44, 19, 38, 46, 85, 66, 79],
             fill: false,
             borderColor: "rgba(153, 102, 255, 1)",
@@ -135,7 +135,7 @@ function drawPieChart() {
       data: {
         datasets: [
           {
-            data: [4600, 5400, 2000, 6000, 200],
+            data: [6, 4, 5],
             backgroundColor: [
               window.chartColors.purple,
               window.chartColors.green,

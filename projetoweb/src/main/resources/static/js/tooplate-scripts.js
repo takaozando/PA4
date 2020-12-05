@@ -24,34 +24,27 @@ function drawLineChart() {
       type: "line",
       data: {
         labels: [
-          "January",
-          "February",
-          "March",
-          "April",
-          "May",
-          "June",
-          "July"
+          "Janeiro",
+          "Fevereiro",
+          "Março",
+          "Abril",
+          "Maio",
+          "Junho",
+          "Julho"
         ],
         datasets: [
           {
-            label: "Latest Hits",
+            label: "Admissões",
             data: [88, 68, 79, 57, 56, 55, 70],
             fill: false,
             borderColor: "rgb(75, 192, 192)",
             lineTension: 0.1
           },
           {
-            label: "Popular Hits",
+            label: "Demissão",
             data: [33, 45, 37, 21, 55, 74, 69],
             fill: false,
             borderColor: "rgba(255,99,132,1)",
-            lineTension: 0.1
-          },
-          {
-            label: "Featured",
-            data: [44, 19, 38, 46, 85, 66, 79],
-            fill: false,
-            borderColor: "rgba(153, 102, 255, 1)",
             lineTension: 0.1
           }
         ]
@@ -77,7 +70,7 @@ function drawBarChart() {
             },
             scaleLabel: {
               display: true,
-              labelString: "Hits"
+              labelString: "R$ em milhares"
             }
           }
         ]
@@ -90,18 +83,19 @@ function drawBarChart() {
     configBar = {
       type: "bar",
       data: {
-        labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
+        labels: ["Jul", "Ago", "Set", "Out", "Nov", "Dez"],
         datasets: [
           {
-            label: "# of Hits",
-            data: [12, 19, 3, 5, 2, 3],
+            label: "#2º Semestre 2020",
+            data: [12, 19, 3, 5, 2, 3, 1],
             backgroundColor: [
               "rgba(255, 99, 132, 0.2)",
               "rgba(54, 162, 235, 0.2)",
               "rgba(255, 206, 86, 0.2)",
               "rgba(75, 192, 192, 0.2)",
               "rgba(153, 102, 255, 0.2)",
-              "rgba(255, 159, 64, 0.2)"
+              "rgba(255, 159, 64, 0.2)",
+              "rgba(96, 58, 64, 0.2)"
             ],
             borderColor: [
               "rgba(255,99,132,1)",
@@ -109,7 +103,8 @@ function drawBarChart() {
               "rgba(255, 206, 86, 1)",
               "rgba(75, 192, 192, 1)",
               "rgba(153, 102, 255, 1)",
-              "rgba(255, 159, 64, 1)"
+              "rgba(255, 159, 64, 1)",
+              "rgba(96, 58, 64, 1)"
             ],
             borderWidth: 1
           }
@@ -135,7 +130,7 @@ function drawPieChart() {
       data: {
         datasets: [
           {
-            data: [4600, 5400, 2000, 6000, 200],
+            data: [4, 5, 3, 1],
             backgroundColor: [
               window.chartColors.purple,
               window.chartColors.green,
@@ -147,7 +142,7 @@ function drawPieChart() {
             label: "Storage"
           }
         ],
-        labels: ["Sorocaba","Votorantim","São Paulo"]
+        labels: ["Sorocaba","Votorantim","Alumínio","São Paulo"]
       },
       options: optionsPie
     };
@@ -204,8 +199,8 @@ function drawCalendar() {
           start: "0000-00-00"
         },
         {
-          title: "Marcação 1",
-          start: "2020-10-01",
+          title: "Entrega PAIV",
+          start: "2020-12-05",
         },
         {
           title: "Marcação 2",
