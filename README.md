@@ -7,10 +7,10 @@ A criação de uma API WEB para o controle de funcionários com foco em facilita
 * Trello
 * Código e Interface: **JAVA**, **HTML**, **JS**, **CSS**
 * Banco de Dados: **DERBY**
-## Cronograma
-# Front-End
+# Cronograma
+## Front-End
 https://trello.com/b/hqPkavKL/front-end
-# Back-End
+## Back-End
 https://trello.com/b/tsoysB96/back-end
 # Desenvolvido por:
 * Antonio Canno: https://github.com/tonicocanno
